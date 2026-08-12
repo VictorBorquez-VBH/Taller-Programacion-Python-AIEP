@@ -6,7 +6,7 @@ class Alumno:
         self.edad = edad
         self.carrera = carrera
 
-a1 = Alumno("Juan",20,"Informática")
+a1 = Alumno("Ana",20,"Informática")
 
 print(a1.nombre)
 print(a1.edad)

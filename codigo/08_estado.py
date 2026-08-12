@@ -15,3 +15,7 @@ print(auto.velocidad)
 auto.acelerar()
 
 print(auto.velocidad)
+
+auto.acelerar()
+
+print(auto.velocidad)
