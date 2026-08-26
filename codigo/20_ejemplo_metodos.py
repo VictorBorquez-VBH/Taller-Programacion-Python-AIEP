@@ -1,4 +1,4 @@
-# Ejemplo de métodos en una clase (instancias de objetos)
+# Ejemplo de métodos de instancias
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
