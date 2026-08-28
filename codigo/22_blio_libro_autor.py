@@ -14,11 +14,6 @@ class Libro:
         print(f"Libro: {self.titulo}")
         print(f"Autor: {self.autor}")
 
-
-
-
-
-
 class Biblioteca:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -31,7 +26,4 @@ class Biblioteca:
         print(f"\nBiblioteca: {self.nombre}")
 
         for libro in self.libros:
-            print(
-                f"- {libro.titulo} "
-                f"({libro.autor})"
-            )
+            print(f"- {libro.titulo}" f"({libro.autor})")
