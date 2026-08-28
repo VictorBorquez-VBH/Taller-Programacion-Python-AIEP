@@ -27,3 +27,15 @@ class Biblioteca:
 
         for libro in self.libros:
             print(f"- {libro.titulo}" f"({libro.autor})")
+
+autor1 = Autor("Gabriel García Márquez")
+autor2 = Autor("Isaac Asimov")
+
+libro1 = Libro("Cien años de soledad", autor1)
+libro2 = Libro("Fundación", autor2)
+
+biblioteca = Biblioteca("Biblioteca Central")
+
+biblioteca.agregar_libro(libro1)
+biblioteca.agregar_libro(libro2)
+biblioteca.listar_libros()
