@@ -1,0 +1,21 @@
+classDiagram
+class Institucion
+class Carrera
+class Alumno
+class Profesor
+class Asignatura
+class Seccion
+class Aula
+class Computador
+class Evaluacion
+class GeneradorReporte
+class Sistema
+Institucion "1" *-- "1..*" Carrera : posee
+Carrera "1" o-- "0..*" Profesor : agrupa
+Alumno "0..*" --> "0..*" Asignatura : matricula
+Asignatura "1" *-- "1..*" Seccion : posee
+Profesor "1" --> "0..*" Seccion : imparte
+Seccion "0..*" --> "1" Aula : utiliza
+Aula "1" o-- "1..*" Computador : contiene
+Seccion "1" *-- "0..*" Evaluacion : posee
+Sistema ..> GeneradorReporte : <<use>>

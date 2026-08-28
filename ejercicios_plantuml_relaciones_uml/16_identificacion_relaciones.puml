@@ -1,0 +1,16 @@
+@startuml
+title Ejercicio 16 - Identificación de relaciones
+class Universidad
+class Profesor
+class Equipo
+class Jugador
+class Pedido
+class LineaPedido
+class Cliente
+class CuentaBancaria
+
+Universidad -- Profesor : asociación
+Equipo o-- Jugador : agregación
+Pedido *-- LineaPedido : composición
+Cliente -- CuentaBancaria : asociación
+@enduml

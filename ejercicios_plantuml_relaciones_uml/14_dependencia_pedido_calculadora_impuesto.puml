@@ -1,0 +1,10 @@
+@startuml
+title Ejercicio 14 - Dependencia: Pedido - Calculadora de Impuesto
+class Pedido {
+  + calcularTotal()
+}
+class CalculadoraImpuesto {
+  + calcular()
+}
+Pedido ..> CalculadoraImpuesto : <<use>>
+@enduml

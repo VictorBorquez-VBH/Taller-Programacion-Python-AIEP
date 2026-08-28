@@ -1,0 +1,11 @@
+@startuml
+title Ejercicio 8 - Agregación: Empresa - Proyecto
+class Empresa {
+  - nombre
+}
+class Proyecto {
+  - codigo
+  - nombre
+}
+Empresa "1" o-- "0..*" Proyecto : administra
+@enduml

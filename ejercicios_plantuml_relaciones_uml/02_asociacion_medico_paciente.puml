@@ -1,0 +1,12 @@
+@startuml
+title Ejercicio 2 - Asociación: Médico - Paciente
+class Medico {
+  - nombre
+  - especialidad
+}
+class Paciente {
+  - nombre
+  - rut
+}
+Medico "1" -- "0..*" Paciente : atiende
+@enduml

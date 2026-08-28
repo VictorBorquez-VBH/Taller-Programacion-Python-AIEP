@@ -1,0 +1,11 @@
+@startuml
+title Ejercicio 4 - Asociación: Profesor - Asignatura
+class Profesor {
+  - nombre
+}
+class Asignatura {
+  - codigo
+  - nombre
+}
+Profesor "0..*" -- "0..*" Asignatura : imparte
+@enduml

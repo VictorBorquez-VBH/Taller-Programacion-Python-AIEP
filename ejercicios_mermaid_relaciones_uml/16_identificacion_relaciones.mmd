@@ -1,0 +1,13 @@
+classDiagram
+class Universidad
+class Profesor
+class Equipo
+class Jugador
+class Pedido
+class LineaPedido
+class Cliente
+class CuentaBancaria
+Universidad --> Profesor : asociacion
+Equipo o-- Jugador : agregacion
+Pedido *-- LineaPedido : composicion
+Cliente --> CuentaBancaria : asociacion

@@ -1,0 +1,12 @@
+@startuml
+title Ejercicio 10 - Composición: Pedido - Línea de Pedido
+class Pedido {
+  - numero
+  - fecha
+}
+class LineaPedido {
+  - cantidad
+  - precio
+}
+Pedido "1" *-- "1..*" LineaPedido : contiene
+@enduml

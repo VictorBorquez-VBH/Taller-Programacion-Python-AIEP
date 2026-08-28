@@ -1,0 +1,12 @@
+@startuml
+title Ejercicio 5 - Agregación: Equipo - Jugador
+class Equipo {
+  - nombre
+  - ciudad
+}
+class Jugador {
+  - nombre
+  - posicion
+}
+Equipo "1" o-- "0..*" Jugador : integra
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+title Ejercicio 18 - Sistema Universitario
+class Universidad
+class Facultad
+class Profesor
+class Alumno
+class Curso
+class Aula
+class Proyector
+
+Universidad "1" *-- "1..*" Facultad : posee
+Facultad "1" o-- "0..*" Profesor : agrupa
+Alumno "0..*" -- "0..*" Curso : participa
+Curso "0..*" -- "1" Aula : utiliza
+Aula "1" o-- "0..*" Proyector : contiene
+Profesor ..> Proyector : <<use>>
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+title Ejercicio 13 - Dependencia: Profesor - Impresora
+class Profesor {
+  + imprimirDocumento()
+}
+class Impresora {
+  + imprimir()
+}
+Profesor ..> Impresora : <<use>>
+@enduml

@@ -1,0 +1,15 @@
+classDiagram
+class Cliente
+class Carrito
+class Producto
+class Pedido
+class LineaPedido
+class MedioPago
+class ServicioEmail
+Cliente "1" *-- "1" Carrito : posee
+Carrito "1" o-- "0..*" Producto : contiene
+Cliente "1" --> "0..*" Pedido : realiza
+Pedido "1" *-- "1..*" LineaPedido : contiene
+LineaPedido "0..*" --> "1" Producto : referencia
+Pedido ..> MedioPago : <<use>>
+Pedido ..> ServicioEmail : <<use>>

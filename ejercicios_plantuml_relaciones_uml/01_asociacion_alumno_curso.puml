@@ -1,0 +1,12 @@
+@startuml
+title Ejercicio 1 - Asociación: Alumno - Curso
+class Alumno {
+  - id
+  - nombre
+}
+class Curso {
+  - codigo
+  - nombre
+}
+Alumno "0..*" -- "0..*" Curso : inscrito en
+@enduml

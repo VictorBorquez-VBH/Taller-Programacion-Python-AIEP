@@ -1,0 +1,10 @@
+classDiagram
+class Cliente
+class Pedido
+class LineaPedido
+class Producto
+class Impresora
+Cliente "1" --> "0..*" Pedido : realiza
+Pedido "1" *-- "1..*" LineaPedido : contiene
+LineaPedido "0..*" --> "1" Producto : referencia
+Pedido ..> Impresora : <<use>>

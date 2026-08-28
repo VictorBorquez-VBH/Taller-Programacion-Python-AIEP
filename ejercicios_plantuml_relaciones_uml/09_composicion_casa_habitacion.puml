@@ -1,0 +1,8 @@
+@startuml
+title Ejercicio 9 - Composición: Casa - Habitación
+class Casa
+class Habitacion {
+  - tipo
+}
+Casa "1" *-- "1..*" Habitacion : contiene
+@enduml

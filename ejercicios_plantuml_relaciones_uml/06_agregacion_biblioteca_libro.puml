@@ -1,0 +1,8 @@
+@startuml
+title Ejercicio 6 - Agregación: Biblioteca - Libro
+class Biblioteca
+class Libro {
+  - titulo
+}
+Biblioteca "1" o-- "0..*" Libro : administra
+@enduml

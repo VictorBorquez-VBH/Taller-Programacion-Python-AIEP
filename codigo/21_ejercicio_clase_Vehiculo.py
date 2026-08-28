@@ -1,5 +1,5 @@
 class Vehiculo:
-    def __init__(self, velocidad):
+    def __init__(self, velocidad=10):
         self.velocidad = velocidad
         
     def encender(self):
@@ -16,6 +16,6 @@ class Vehiculo:
     def apagar(self):
         print("El vehículo ha sido apagado.")
 
-auto = Vehiculo(0)
+auto = Vehiculo(30)
 auto.encender()
 auto.acelerar()

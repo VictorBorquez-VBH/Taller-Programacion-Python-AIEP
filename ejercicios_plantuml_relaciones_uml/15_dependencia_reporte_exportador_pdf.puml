@@ -1,0 +1,10 @@
+@startuml
+title Ejercicio 15 - Dependencia: Reporte - Exportador PDF
+class Reporte {
+  + generarPDF()
+}
+class ExportadorPDF {
+  + exportar()
+}
+Reporte ..> ExportadorPDF : <<use>>
+@enduml

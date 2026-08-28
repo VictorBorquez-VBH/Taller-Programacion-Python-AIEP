@@ -1,0 +1,9 @@
+@startuml
+title Ejercicio 7 - Agregación: Departamento - Profesor
+class Departamento
+class Profesor {
+  - nombre
+  - especialidad
+}
+Departamento "1" o-- "0..*" Profesor : agrupa
+@enduml

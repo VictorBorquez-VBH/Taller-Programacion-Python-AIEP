@@ -1,0 +1,10 @@
+@startuml
+title Ejercicio 11 - Composición: Universidad - Facultad
+class Universidad {
+  - nombre
+}
+class Facultad {
+  - nombre
+}
+Universidad "1" *-- "1..*" Facultad : posee
+@enduml

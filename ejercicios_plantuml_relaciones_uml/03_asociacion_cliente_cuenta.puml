@@ -1,0 +1,12 @@
+@startuml
+title Ejercicio 3 - Asociación: Cliente - Cuenta Bancaria
+class Cliente {
+  - rut
+  - nombre
+}
+class CuentaBancaria {
+  - numero
+  - saldo
+}
+Cliente "1" -- "1..*" CuentaBancaria : posee
+@enduml

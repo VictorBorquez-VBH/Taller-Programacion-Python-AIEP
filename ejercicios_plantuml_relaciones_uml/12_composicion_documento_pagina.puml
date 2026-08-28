@@ -1,0 +1,10 @@
+@startuml
+title Ejercicio 12 - Composición: Documento - Página
+class Documento {
+  - titulo
+}
+class Pagina {
+  - numero
+}
+Documento "1" *-- "1..*" Pagina : contiene
+@enduml
