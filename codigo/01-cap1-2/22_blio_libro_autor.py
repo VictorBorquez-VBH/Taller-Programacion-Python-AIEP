@@ -33,6 +33,8 @@ autor2 = Autor("Isaac Asimov")
 
 libro1 = Libro("Cien años de soledad", autor1)
 libro2 = Libro("Fundación", autor2)
+libro1.mostrar_informacion()
+libro2.mostrar_informacion()
 
 biblioteca = Biblioteca("Biblioteca Central")
 
